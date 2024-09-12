@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prompt {
+    margin: 5rem;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(143, 50, 50);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+
+    & .text {
+        font-size: 30px;
+    }
+
+    & .player {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        background-color: #ffffff;
+        color: #000;
+    }
+
+    & .play {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 5px;
+
+    }
+}

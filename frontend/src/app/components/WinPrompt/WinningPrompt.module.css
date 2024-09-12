@@ -1,0 +1,47 @@
+.hidden {
+    display: none;
+  }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  } 
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+}
+
+.text-container {
+    margin: 5rem;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+
+    & .winning-text {
+        font-size: 30px;
+        width: max-content;
+        height: max-content;
+    }
+
+    & button {
+        font-size: 30px;
+        font-family: nerko;
+        border-radius: 1rem;
+        margin-left: 1rem;
+    }
+}

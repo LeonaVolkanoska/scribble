@@ -1,0 +1,60 @@
+.container{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.word{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    border-bottom: 1px solid  rgb(204, 207, 0);
+    font-size: larger;
+}
+.words-container{
+    height: 100%;
+    color: black;
+    font-size: larger;
+    & li{
+        list-style-type: none;
+    }
+}
+
+.words-list{
+    height: 60%;
+    border-top: 1px solid  rgb(204, 207, 0);
+}
+
+.input{
+   height: 25%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+
+   & .input-guess{
+    height: 60%;
+    font-family: nerko;
+    font-size: larger;
+    border: 1px solid rgba(39, 39, 39, 0.897);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+   }
+
+   & .button-guess{
+    height: 40%;
+    font-family: nerko;
+    font-size: larger;
+    color: black;
+    border: 1px solid rgba(167, 245, 104, 0.897);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgba(167, 245, 104, 0.897);
+   }
+}
+
