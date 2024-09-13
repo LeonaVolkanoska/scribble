@@ -36,12 +36,19 @@
         font-size: 30px;
         width: max-content;
         height: max-content;
+        margin-bottom: 1rem;
     }
 
     & button {
         font-size: 30px;
         font-family: nerko;
-        border-radius: 1rem;
         margin-left: 1rem;
+        font-size: 18px; 
+        background-color: #54b357; 
+        color: white;
+        border-radius: 5px; 
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease; 
     }
 }

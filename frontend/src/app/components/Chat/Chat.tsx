@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Chat.module.css";
 
-interface PromptProps {
+interface ChatProps {
   handleChatMessage: (word: string) => void;
   check: (word: string) => void;
   chatMessage: ChatMessage[];
@@ -12,13 +12,12 @@ interface PromptProps {
 interface ChatMessage {
   word: string;
   playerName: string | null;
-  isCorrect: boolean | null;
 }
 export default function Chat({
   handleChatMessage,
   check,
   chatMessage,
-}: PromptProps) {
+}: ChatProps) {
   const [guessedWord, setGuessedWord] = useState<string>("");
 
   return (
@@ -29,8 +28,7 @@ export default function Chat({
           <ul className={styles["words-list"]}>
             {chatMessage?.map((m, index) => (
               <li key={index}>
-                {m.playerName} : {m.word}{" "}
-                {m.isCorrect ? "(correct)" : "(wrong)"}
+                {m.playerName} : {m.word}
               </li>
             ))}
           </ul>
